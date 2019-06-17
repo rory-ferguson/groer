@@ -14,12 +14,12 @@ class SearchResultsView(ListView):
         if self.request.GET.get('q'):
             query = self.request.GET.get('q')
             self.request.session['results'] = query
-            object_list = OpenPayments.objects.filter(physician_first_name__icontains=query)
+            object_list = OpenPayments.objects.filter(physician_first_name__iexact=query)
             return object_list
         
     def post(self, request, *args, **kwargs):
         query = request.session['results']
-        results = OpenPayments.objects.filter(physician_first_name__icontains=query).values()
+        results = OpenPayments.objects.filter(physician_first_name__iexact=query).values()
         response = create_xls(results)
         return response
 
