@@ -4,15 +4,15 @@ Anytime a doctor accepts things like lunches, gifts, etc. that cost greater than
 
 [https://openpaymentsdata.cms.gov/dataset/General-Payment-Data-Detailed-Dataset-2015-Reporti/8xjh-6p62](https://openpaymentsdata.cms.gov/dataset/General-Payment-Data-Detailed-Dataset-2015-Reporti/8xjh-6p62)
 
-We would like you to create a web application that imports this data. Make sure that it checks regularly to get the most recent updates. Build a search tool with a typeahead that returns all relevant data. When search results are returned build an export to Excel feature. Make sure that this outputs to an XLS file.
+Create a web application that imports this data. Make sure that it checks regularly to get the most recent updates. Build a search tool with a typeahead that returns all relevant data. When search results are returned build an export to Excel feature. Make sure that this outputs to an XLS file.
 
 ## Requirements
 
-Python 3.7 [https://www.python.org/downloads/release/python-373/](https://www.python.org/downloads/release/python-373/)
+**Python 3.7** [https://www.python.org/downloads/release/python-373/](https://www.python.org/downloads/release/python-373/)
 
-Django 2.2
+**Django 2.2**
 
-Pipenv for a virtual environment [https://docs.pipenv.org/en/latest/](https://docs.pipenv.org/en/latest/)
+**Pipenv** for a virtual environment [https://docs.pipenv.org/en/latest/](https://docs.pipenv.org/en/latest/)
 
 ## Installation
 
@@ -28,7 +28,7 @@ Pipenv for a virtual environment [https://docs.pipenv.org/en/latest/](https://do
 
 Navigate to the homepage [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-Search a name and submit
+Start typing a name, suggestions will appear, then submit
 
 The results are loaded onto the page
 
@@ -40,4 +40,4 @@ Crontab is not apart of django and would be setup on my local environment (OSX).
 
     */10 * * * * python3 /Users/rory/Documents/repositories/github/groer/reorg/manage.py migrate_data
 
-The above should run the `migrate_date` custom management command every 10 minutes.
+The above should run the `migrate_data` custom management command every 10 minutes.
