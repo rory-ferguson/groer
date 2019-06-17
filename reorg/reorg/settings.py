@@ -40,8 +40,6 @@ INSTALLED_APPS = [
 
     'connect',
     'search',
-
-    'django_elasticsearch_dsl',
 ]
 
 ELASTICSEARCH_DSL={
