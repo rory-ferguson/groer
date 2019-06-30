@@ -23,8 +23,6 @@ class SearchResultsView(ListView):
         response = create_xls(results)
         return response
 
-
-
 def autocomplete(request):
     model = OpenPayments
     query = list(OpenPayments.objects.values_list('physician_first_name', flat=True).distinct())
