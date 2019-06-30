@@ -1,7 +1,6 @@
 {% extends "base.html" %}
 
 {% block content %}
-
 <div class="container">
 	{% if object_list %}
 	<form method="post">
@@ -78,6 +77,8 @@
 </div>
 
 {% load static %}
-<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+<link rel="stylesheet" type="text/css" href="{% static 'search/css/typeahead.css' %}" />
+
+<script type="text/javascript" src="{% static 'search/js/main.js' %}"></script>
 
 {% endblock %}
