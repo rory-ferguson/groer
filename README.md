@@ -32,7 +32,7 @@ Start typing a name, suggestions will appear, then submit
 
 The results are loaded onto the page
 
-Click the `Export to Excel` to download an `.xls` file.
+Click `Export to Excel` to download an `.xls` file.
 
 ## Setting Up A Cron Schedule
 
