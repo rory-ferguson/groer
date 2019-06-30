@@ -6,19 +6,12 @@ from connect.socrata import Socrata
 
 socrata = Socrata(domain="openpaymentsdata.cms.gov", dataid="8pru-svmk") 
 
-"""
-    @todo
-    Check if dataset api count and db count are the same
-    Does not check which rows need updating 
-"""
-
 def db_has_data():
     try:
         if OpenPayments.objects.all()[0]:
             return True
     except IndexError:
         return False
-
 
 def dataset_count():
     """ Returns total count of db
