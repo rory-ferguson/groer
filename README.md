@@ -40,4 +40,4 @@ Crontab is not apart of django and would be setup on my local environment (OSX).
 
     */10 * * * * python3 /Users/rory/Documents/repositories/github/groer/reorg/manage.py migrate_data
 
-The above should run the `migrate_data` custom management command every 10 minutes.
+The above should run the `migrate_data` custom management command every 10 minutes from the hour (01:10, 01:20 etc).
